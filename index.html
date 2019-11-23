@@ -1,0 +1,77 @@
+<html>
+   <head>
+       <meta charset="utf-8" >
+
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+       <title>Complete Simultaneous</title>
+     </head>
+     <body>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Simultaneous</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+        </div>
+      </nav>
+       <div class="container" >
+        <div class ="row">
+          <div class="col-md-6 col-xs-12">
+            <div class="jumbotron">
+                <h1>Simultaneous equation</h1>
+                <p>a set of two or more equations, each containing two or more variables whose values can simultaneously satisfy both or all
+                  the equations in the set, the number of variables being equal to or less than the number of equations in the set..</p>
+            </div>
+            <p>The right side of this page is a workspace for you to enter the values of your equation and get the corresponding
+            value of your unknown</p>
+            <p>Please take note that it is already assumed here that your unknown is x and y ..incase you have a question that states
+            the unknown to be other letters apart from x and y, never mind just enter the coeffient of the letter that you have in your equation</p>
+
+          </div>
+
+
+          <div class="col-md-6 col-xs-12">
+            <form >
+              <h3>Work Space</h3>
+
+              <div class = "col-xs-12">
+              <input type = "text" id ="first"  size = "1" placeholder="A"/> x <input type = "text" id ="operatorone" size = "1" placeholder=" + "/>
+              <input type = "text" id ="second" size = "1" placeholder="B"/> y = <input type = "text" id = "constantC" size = "1" placeholder="C"/>
+            </div>
+
+
+             <div class="col-xs-12">
+              <input type = "text" id ="third" size = "1" placeholder="D"/> x <input type = "text" id ="operatortwo" size = "1" placeholder=" - "/>
+              <input type = "text" id ="fourth" size = "1" placeholder="E"/> y = <input type = "text" id = "constantF" size = "1" placeholder="F"/>
+             </div>
+            <div class="col-xs-12">
+              <h3>Answers</h3>
+              <input type = "text" id ="answer1" readonly size = "10" placeholder="VALUE OF X"/>
+              <input type = "text" id ="answer2" readonly size = "10" placeholder="VALUE OF Y"/>
+           </div>
+
+
+              <div class="col-xs-4">
+                <br />
+             <input type ="button" onclick = "completeSimultaneous()" id = "calculate" class="btn btn-primary" value="Calculate"/>
+             <p id="demo"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+
+       </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     </body>
+     </html>
